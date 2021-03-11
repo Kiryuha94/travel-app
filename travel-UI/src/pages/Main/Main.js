@@ -1,6 +1,7 @@
 // import { render } from '@testing-library/react';
 import React, { Component } from 'react';
 import UniversalCarousel from 'components/Carousel';
+// import Modal from 'components/Modal/modal'
 import {
   Button,
   Input,
@@ -25,44 +26,42 @@ class Main extends Component {
       isDropBut: false,
     };
 
-    // setTimeout(() => {
-    //   this.props.history.push('/country')
-    // }, 4000);
   }
 
   toggle = () => {
     const { isDropBut } = this.state;
     this.setState({ isDropBut: !isDropBut });
   };
-
-  changeLanguage = () => () => {};
+  
+    changeLanguage = (lng) => {
+      this.props.i18n.changeLanguage(lng);}
 
   render() {
     const { isDropBut } = this.state;
     const { t, i18n } = this.props;
-    console.log('🔥', this.props);
+    // console.log('🔥', this.props);
 
     return (
-      <div className="wrapper">
+      <div className="position-relative wrapper">
         <CardHeader className="header ">
+          <img className="label" src="media/img/label.png" alt="label" />
           <CardTitle tag="h1">{t('title') + this.props.search}</CardTitle>
           <Card className="d-flex flex-row bg-transparent border-0">
             <Input
               className="w-25"
               type="search"
               placeholder="Search the country"
-              onChange={(e) => {
-                this.props.setSearch(e.target.value);
-              }}
-            />
+              // onChange={(e) => {
+                //   this.props.setSearch(e.target.value);
+                // }}
+                />
             <Button onClick={() => {}}>{t('buttonSerch')}</Button>
-            <ButtonDropdown isOpen={isDropBut} toggle={this.toggle} onClick={this.changeLanguage}>
+            <ButtonDropdown isOpen={isDropBut} toggle={this.toggle}>
               <DropdownToggle caret>{t('buttonChouseLang')}</DropdownToggle>
               <DropdownMenu>
-                <DropdownItem disabled>English</DropdownItem>
-                <DropdownItem>Русский</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Deutsch</DropdownItem>
+                <DropdownItem onClick={() => this.changeLanguage('en')}>English</DropdownItem>
+                <DropdownItem onClick={() => this.changeLanguage('ru')}>Русский</DropdownItem>
+                <DropdownItem onClick={() => this.changeLanguage('de')}>Deutsch</DropdownItem>
               </DropdownMenu>
             </ButtonDropdown>
           </Card>
@@ -70,10 +69,10 @@ class Main extends Component {
         <CardBody className="wrapper__body">
           <UniversalCarousel />
         </CardBody>
-        <CardFooter className="footer d-flex justify-content-around bg-transparent border-0">
+        <CardFooter className="footer d-flex justify-content-between bg-transparent border-0">
           <span className="year">2021</span>
           <a href="https://rs.school/js/">
-            <CardImg className="logo" src="media/img/rs_school_js.svg"></CardImg>
+            <img className="logo" src="media/img/rs_school_js.svg" />
           </a>
         </CardFooter>
       </div>

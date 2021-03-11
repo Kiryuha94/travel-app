@@ -1,7 +1,9 @@
 {
-  "title": "We halp you travel",
+  "title": "We help you travel",
   "buttonSerch": "Serch",
   "buttonChouseLang": "Languages",
+  "tempr":"Temperature",
+  "natCurrency":"National currency",
   "caption": {
     "nz": "New Zealand",
     "cz": "The Czech Republic",

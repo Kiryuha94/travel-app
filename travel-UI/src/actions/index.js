@@ -13,3 +13,4 @@ export const setSearch = (payload) => ({
 });
 
 export const setCountryItem = createAction(actionTypes.SET_COUNTRY_ITEM);
+export const setCountryFooter = createAction(actionTypes.SET_COUNTRY_FOOTER);

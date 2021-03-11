@@ -1,7 +1,7 @@
 import Main from 'pages/Main';
 import Country from 'pages/Counrty';
 import ROUTES from 'constants/routes';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, BrowserRouter, Redirect } from 'react-router-dom';
 
 const App = () => {
   return (

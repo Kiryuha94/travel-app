@@ -1,5 +1,7 @@
-import React,{Component} from 'react'
+import { setCountryFooter } from 'actions';
+import React, { Component } from 'react';
 import { render } from 'react-dom/cjs/react-dom.development';
+import bel from '../../components/countresJSON/belarus.json'
 import {
   Button,
   Input,
@@ -14,20 +16,26 @@ import {
   DropdownMenu,
   DropdownItem,
 } from 'reactstrap';
-class Country extends Component{
- constructor(props) {
+import Weather from 'components/Weather/Weather';
+import Currensy from 'components/Currensy/Currensy';
+class Country extends Component {
+  constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {};
+  }
 
-}
-render(){
+  render() {
+
     return (
       <div className="wrapper-country">
-        <CardHeader>{this.props.item.header}</CardHeader>
-        <CardBody>{this.props.item.body}</CardBody>
+        <CardHeader>{bel.name}</CardHeader>
+        <CardBody>
+          <Weather city={`${bel.name}`} />
+          <Currensy cur={bel.cur}/>
+        </CardBody>
         <CardFooter></CardFooter>
       </div>
     );
+  }
 }
-}
-export default Country
+export default Country;

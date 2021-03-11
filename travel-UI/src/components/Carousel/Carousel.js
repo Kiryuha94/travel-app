@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 const UniversalCarousel = (props) => {
   const [t, i18n] = useTranslation();
-  const { setCountryItem } = props;
+  const { setCountryItem, setCountryFooter } = props;
   const items = [
     {
       src: '/media/img/Belarus/Minsk.jpg',
@@ -86,11 +86,10 @@ const UniversalCarousel = (props) => {
         <div
           className="carousel"
           onClick={() => {
-            console.log('🔥');
-            props.history.push('/country')
+            props.history.push('/country');
             setCountryItem({
               header: 'USA',
-              body: 'aaaa'
+              // body: '/media/img/New Zealand/New Zealand.jpg',
             });
           }}>
           <img src={item.src} alt={item.altText} />
@@ -100,7 +99,6 @@ const UniversalCarousel = (props) => {
     );
   });
 
- 
   return (
     <Carousel activeIndex={activeIndex} next={next} previous={previous}>
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
