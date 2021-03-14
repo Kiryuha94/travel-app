@@ -3,6 +3,9 @@
   "buttonSerch": "Serch",
   "buttonChouseLang": "Languages",
   "tempr":"Temperature",
+  "time":"Time",
+  "date":"Date",
+
   "natCurrency":"National currency",
   "caption": {
     "nz": "New Zealand",

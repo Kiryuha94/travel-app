@@ -84,7 +84,7 @@ const UniversalCarousel = (props) => {
         onExited={() => setAnimating(false)}
         key={`${item.src}${item.caption}`}>
         <div
-          className="carousel"
+          className="carousel1"
           onClick={() => {
             props.history.push('/country');
             setCountryItem({
@@ -94,13 +94,13 @@ const UniversalCarousel = (props) => {
           }}>
           <img src={item.src} alt={item.altText} />
         </div>
-        <CarouselCaption className="info-contry" captionText={item.information} captionHeader={item.caption} />
+        <CarouselCaption className="info-contry" captionText={''} captionHeader={item.caption} />
       </CarouselItem>
     );
   });
 
   return (
-    <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+    <Carousel  className='aaa'  activeIndex={activeIndex} next={next} previous={previous}>
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
 
       {slides}

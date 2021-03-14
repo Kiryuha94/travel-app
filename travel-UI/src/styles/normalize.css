@@ -7,3 +7,10 @@
     background: url(../media/img/atmosfera-mir-karta.jpg)  center/cover;
     height: 100vh;
 }
+#root {
+    height: 100vh;
+    width: 100vw;
+}
+.wrapper-country {
+    max-width: 100%;
+}

@@ -1,31 +1,35 @@
-.carousel {
-    margin: 0 auto;
+.carousel1 {
+  margin: 0 auto;
   width: 70%;
-  height: 46rem;
+  height: 50rem;
   display: flex;
-  align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
-.carousel img{
-    height: 100%;
+.carousel img {
+  width: 100%;
 }
 
 .info-contry {
-    height: max-content;
-    margin-bottom: 1.5rem;
+  height: max-content;
+  margin-bottom: 1.5rem;
 }
 
 .info-contry p {
-    background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   color: rgb(250, 242, 242);
   font-size: 1.5rem;
   font-weight: 900;
-   text-shadow: 1px 1px 2px black, 0 0 1em rgb(148, 215, 231);
-   
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(148, 215, 231);
 }
 
-.info-contry h3{
-    color: rgb(30, 236, 236);
-    text-shadow: 1px 1px 2px black, 0 0 1em red;
+.info-contry h3 {
+  color: rgb(30, 236, 236);
+  text-shadow: 1px 1px 2px black, 0 0 1em red;
 }
+
+/* .aaa {
+    height: 50rem;
+    width: 100%;
+} */

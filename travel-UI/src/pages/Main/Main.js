@@ -24,33 +24,44 @@ class Main extends Component {
     super(props);
     this.state = {
       isDropBut: false,
+      filter:'',
+      countres: 
+       [ 'bel', 'pol', 'ukr','ru']
+      
     };
-
+    
   }
-
+  
   toggle = () => {
     const { isDropBut } = this.state;
     this.setState({ isDropBut: !isDropBut });
   };
   
-    changeLanguage = (lng) => {
-      this.props.i18n.changeLanguage(lng);}
+  changeLanguage = (lng) => {
+    this.props.i18n.changeLanguage(lng);}
+    
+    
+    hendlSerch =(e)=>{
+      console.log(e);
+     this.setState({ filter: e.target.value });
+      
+    }
 
   render() {
     const { isDropBut } = this.state;
     const { t, i18n } = this.props;
-    // console.log('🔥', this.props);
 
     return (
       <div className="position-relative wrapper">
-        <CardHeader className="header ">
+        <header className="header ">
           <img className="label" src="media/img/label.png" alt="label" />
-          <CardTitle tag="h1">{t('title') + this.props.search}</CardTitle>
-          <Card className="d-flex flex-row bg-transparent border-0">
+          <CardTitle tag="h1">{t('title')}</CardTitle>
+          <div className="d-flex flex-row bg-transparent border-0">
             <Input
               className="w-25"
               type="search"
               placeholder="Search the country"
+              onChange={this.hendlSerch}
               // onChange={(e) => {
                 //   this.props.setSearch(e.target.value);
                 // }}
@@ -64,8 +75,8 @@ class Main extends Component {
                 <DropdownItem onClick={() => this.changeLanguage('de')}>Deutsch</DropdownItem>
               </DropdownMenu>
             </ButtonDropdown>
-          </Card>
-        </CardHeader>
+          </div>
+        </header>
         <CardBody className="wrapper__body">
           <UniversalCarousel />
         </CardBody>
