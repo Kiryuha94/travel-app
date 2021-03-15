@@ -18,9 +18,11 @@ const Currensy = ({cur}) => {
   }, []);
   return (
     <>
-      <div className='currency'>
+      <div className="currency">
         {`${t('natCurrency')}- ${cur}`}
-        <span>`1 EUR: {currencyOptions}`</span>
+        <span>
+          1 EUR: {currencyOptions}{cur}
+        </span>
       </div>
     </>
   );

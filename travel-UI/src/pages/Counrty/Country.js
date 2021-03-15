@@ -1,19 +1,14 @@
 import { setCountryFooter } from 'actions';
 import React, { Component } from 'react';
 import { render } from 'react-dom/cjs/react-dom.development';
-import bel from '../../components/countresJSON/belarus.json'
+import bel from '../../components/countresJSON/belarus.json';
 import ImageGallery from 'react-image-gallery';
 import { Player } from 'video-react';
 
 import {
-  Button,
-  Input,
   Card,
-  CardHeader,
   CardTitle,
   CardBody,
-  CardFooter,
-  CardImg,
   ButtonDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -37,7 +32,6 @@ const images = [
     original: 'https://picsum.photos/id/1019/1000/600/',
     thumbnail: 'https://picsum.photos/id/1019/250/150/',
   },
-
 ];
 class Country extends Component {
   constructor(props) {
@@ -60,10 +54,14 @@ class Country extends Component {
     const { isDropBut } = this.state;
 
     return (
-      <div className="wrapper-country">
-        <CardHeader className="header ">
+      <div
+        style={{
+          backgroundImage: `url("https://images.wallpaperscraft.ru/image/ruiny_nebo_trava_gory_84811_1600x1200.jpg")`,
+        }}
+        className="wrapper-country ">
+        <header className="header-country ">
+          <CardTitle className="title-country">{t('title')}</CardTitle>
           <img className="label" src="media/img/label.png" alt="label" />
-          <CardTitle tag="h1">{t('title') + this.props.search}</CardTitle>
           <Card className="d-flex flex-row bg-transparent border-0">
             <ButtonDropdown isOpen={isDropBut} toggle={this.toggle}>
               <DropdownToggle caret>{t('buttonChouseLang')}</DropdownToggle>
@@ -74,17 +72,30 @@ class Country extends Component {
               </DropdownMenu>
             </ButtonDropdown>
           </Card>
-        </CardHeader>
+        </header>
         <CardBody>
-          <CardTitle>{bel.name}</CardTitle>
+          <CardTitle className='country'>{t('caption.bel')}</CardTitle>
+          <CardTitle className='capital'>
+            {t('capitalText')}
+            {t('capitals.bel')}
+          </CardTitle>
           <CardText>{t('mainInf.bel')}</CardText>
-          <Weather city={`${bel.name}`} />
-          <Currensy cur={bel.cur} />
-          <ImageGallery items={images} />
-          <Player src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
-          <GMap/>
+          <div className="api-map">
+            <div className="api-information">
+              <Weather city={`${bel.name}`} />
+              <Currensy cur={bel.cur} />
+            </div>
+            <div className="map">
+              <GMap />
+            </div>
+          </div>
+          <div className="media">
+            <ImageGallery items={images} />
+            <div className="player">
+              <Player src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+            </div>
+          </div>
         </CardBody>
-        <CardFooter></CardFooter>
       </div>
     );
   }

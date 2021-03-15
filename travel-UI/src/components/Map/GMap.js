@@ -3,9 +3,9 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 const API_KEY = 'AIzaSyANdBQVart06g6rSK - arIHOvTd99NDeQ1M';
 const GMap = (props) => {
   const mapStyles = {
-    margin: '1rem auto',
-    width: '100%',
-    height: '100%',
+    margin:'1rem auto',
+    width: '90%',
+    height: '95%',
   };
 
   return (

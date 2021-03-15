@@ -1,6 +1,6 @@
 * {
     font-size: 10px;
-    font-family: 'PT-Lato';
+    font-family: 'Lato';
     padding: 0;
 }
 .wrapper {
@@ -10,7 +10,9 @@
 #root {
     height: 100vh;
     width: 100vw;
+    /* max-width: 100%; */
 }
-.wrapper-country {
-    max-width: 100%;
+
+body{
+    overflow-x: hidden;
 }

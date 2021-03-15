@@ -17,6 +17,16 @@
     "nl": "Nederland",
     "fr": "Frankreich"
   },
+  "capitals": {
+    "nz": " Wellington",
+    "cz": " Praha",
+    "bel": " Minsk",
+    "ru": " Moskau",
+    "pl": " Warschau",
+    "ukr": " Kiew",
+    "nl": " Amsterdam",
+    "fr": " Paris"
+  },
   "mainInf": {
     "nz": "Neuseeland (Māori: Aotearoa [aɔtɛaɾɔa]) ist ein Inselland im südwestlichen Pazifik. Es besteht aus zwei Hauptlandmassen-der Nordinsel (Te Ika-a-Māui) und der Südinsel (Te Waipounamu)—und mehr als 700 kleineren Inseln mit einer Gesamtfläche von 268.021 Quadratkilometern. Neuseeland liegt etwa 2.000 Kilometer östlich von Australien über die Tasmanische See und 1.000 Kilometer südlich der Inseln Neukaledonien, Fidschi und Tonga. Die abwechslungsreiche Topographie des Landes und die scharfen Berggipfel, einschließlich der Südalpen, verdanken viel tektonischen Auftritten und Vulkanausbrüchen. Neuseelands Hauptstadt ist Wellington, und seine bevölkerungsreichste Stadt ist Auckland.",
     "cz": "Die Tschechische Republik: Česká republika [tʃɛskaː rɛpublɪka], auch bekannt unter seinem Kurznamen, Tschechien (/tʃɛkiə / (Über diese Soundlisten); Tschechisch: Česko [tʃɛsko] (Über diese Soundlisten)), ist ein Binnenstaat in Mitteleuropa. Es grenzt im Süden an Österreich, im Westen an Deutschland, im Nordosten an Polen und im Osten an die Slowakei.Die Tschechische Republik hat eine hügelige Landschaft mit einer Fläche von 78.866 Quadratkilometern mit einem meist gemäßigten Kontinentalklima und ozeanischem Klima. Es ist eine einheitliche parlamentarische Republik.",
