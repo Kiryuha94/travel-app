@@ -76,12 +76,13 @@ const UniversalCarousel = (props) => {
     if (animating) return;
     setActiveIndex(newIndex);
   };
-  
+
   const chouseCountry = (e) => {
     const currCountry = e.target.alt;
-   setCountry({
-     country: currCountry,
-   });
+    localStorage.setItem('country', currCountry);
+    setCountry({
+      country: currCountry,
+    });
   };
   const slides = items.map((item) => {
     return (
@@ -103,7 +104,7 @@ const UniversalCarousel = (props) => {
   });
 
   return (
-    <Carousel className="aaa" activeIndex={activeIndex} next={next} previous={previous}>
+    <Carousel className="" activeIndex={activeIndex} next={next} previous={previous}>
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
 
       {slides}

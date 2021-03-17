@@ -7,8 +7,10 @@ const Weather = ({ city }) => {
   const [weather, setWeather] = useState(0);
   const [date, setDate] = useState(new Date().toLocaleTimeString('Loading'));
   const [time, setTime] = useState(new Date().toLocaleTimeString());
+
   useEffect(() => {
     const getWeather = async () => {
+      console.log('🔥', { city });
       const api_url = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
       const data = await api_url.json();
       setWeather(Math.ceil(+data.main.temp - 273));

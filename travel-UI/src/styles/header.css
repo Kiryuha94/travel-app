@@ -33,3 +33,16 @@
     text-shadow: 5px 5px 5px rgb(242, 249, 250);
   color: rgb(5, 5, 5);
 }
+
+.language{
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 486px) {
+ h1{
+   display: none;
+ }
+ .serch{
+  padding-left: 8rem;
+ }
+}

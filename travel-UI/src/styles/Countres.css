@@ -11,7 +11,7 @@
 
 .map {
   position: relative;
-  width: 60rem;
+  width: 100%;
   height: 40rem;
 }
 .wrapper-country {
@@ -99,3 +99,30 @@
     text-shadow: 3px 3px 5px rgb(0, 0, 0), 0 0 1em rgb(26, 92, 110);
 }
 
+@media screen and (max-width: 486px) {
+ .api-map{
+   margin-top: 2rem;
+   flex-direction: column;
+ }
+
+ .title-country{
+   display: none;
+ }
+
+ .capital{
+   font-size: 1.5rem;
+ }
+ .languages{
+   width: max-content;
+   margin: 0 auto;
+   /* padding-left: 10rem; */
+ }
+ .header-country {
+  background:none; 
+}
+
+media > div{
+  width: 100% !important;
+
+}
+}

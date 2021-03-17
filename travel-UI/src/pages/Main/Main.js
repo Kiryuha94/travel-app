@@ -30,6 +30,10 @@ class Main extends Component {
       filter: '',
       data: [bel, ru, ukr, pl, cz, nl, nz, fr],
     };
+
+    const lng = localStorage.getItem('lng') || 'en'
+    console.log('🔥', {lng})
+    props.i18n.changeLanguage(lng);
   }
 
   toggle = () => {
@@ -39,6 +43,7 @@ class Main extends Component {
 
   changeLanguage = (lng) => {
     this.props.i18n.changeLanguage(lng);
+    localStorage.setItem('lng', lng);
   };
 
   hendlSerch = (e) => {
@@ -47,6 +52,7 @@ class Main extends Component {
 
   chouseCountry = (el) => {
     const currCountry = el;
+    localStorage.setItem('country', el);
     this.props.setCountry({
       country: currCountry,
     });
@@ -66,7 +72,7 @@ class Main extends Component {
         <header className="header ">
           <img className="label" src="media/img/label.png" alt="label" />
           <CardTitle tag="h1">{t('title')}</CardTitle>
-          <div className="d-flex flex-row bg-transparent border-0">
+          <div className="serch d-flex flex-row bg-transparent border-0">
             <Input
               autoFocus={true}
               className="w-25 position-relative"
@@ -93,7 +99,9 @@ class Main extends Component {
               {t('buttonSerch')}
             </Button>
             <ButtonDropdown isOpen={isDropBut} toggle={this.toggle}>
-              <DropdownToggle caret>{t('buttonChouseLang')}</DropdownToggle>
+              <DropdownToggle className="language" caret>
+                {t('buttonChouseLang')}
+              </DropdownToggle>
               <DropdownMenu>
                 <DropdownItem onClick={() => this.changeLanguage('en')}>English</DropdownItem>
                 <DropdownItem onClick={() => this.changeLanguage('ru')}>Русский</DropdownItem>

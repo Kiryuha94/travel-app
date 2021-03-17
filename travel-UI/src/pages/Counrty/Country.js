@@ -28,6 +28,17 @@ import GMap from 'components/Map';
 
 const countres = [bel, ru, ukr, pl, cz, nl, nz, fr];
 
+const countryCodes = {
+  nz: 'Wellington',
+  cz: ' Prague',
+  bel: 'Minsk',
+  ru: ' Moscow',
+  pl: ' Warsaw',
+  ukr: 'Kiev',
+  nl: ' Amsterdam',
+  fr: ' Paris',
+};
+
 class Country extends Component {
   constructor(props) {
     super(props);
@@ -35,8 +46,10 @@ class Country extends Component {
       isDropBut: false,
     };
 
+    const currentCountry = localStorage.getItem('country');
+
     this.countryJSON = countres.filter((el) => {
-      return el.id === this.props.country.country;
+      return el.id === currentCountry;
     });
 
     this.images = [
@@ -73,12 +86,13 @@ class Country extends Component {
   };
 
   changeLanguage = (lng) => {
+    localStorage.setItem('lng', lng);
     this.props.i18n.changeLanguage(lng);
   };
 
   render() {
     const { t, i18n, country } = this.props;
-    const curCountry = country.country;
+    const curCountry = localStorage.getItem('country');
     const { isDropBut } = this.state;
     return (
       <div
@@ -86,13 +100,15 @@ class Country extends Component {
           backgroundImage: `url(${this.countryJSON[0].bgPage})`,
         }}
         className="wrapper-country ">
-        <header className="header-country ">
+        <header
+          className="
+         ">
           <CardTitle className="title-country">{t('title')}</CardTitle>
           <Link to="/">
             <img className="label" src="media/img/label.png" alt="label"></img>
           </Link>
           <Card className="d-flex flex-row bg-transparent border-0">
-            <ButtonDropdown isOpen={isDropBut} toggle={this.toggle}>
+            <ButtonDropdown className="languages" isOpen={isDropBut} toggle={this.toggle}>
               <DropdownToggle caret>{t('buttonChouseLang')}</DropdownToggle>
               <DropdownMenu>
                 <DropdownItem onClick={() => this.changeLanguage('en')}>English</DropdownItem>
@@ -111,7 +127,7 @@ class Country extends Component {
           <CardText>{t(`mainInf.${curCountry}`)}</CardText>
           <div className="api-map">
             <div className="api-information">
-              <Weather city={t(`capitals.${curCountry}`)} />
+              <Weather city={countryCodes[curCountry]} />
               <Currensy cur={this.countryJSON[0].cur} />
             </div>
             <div className="map">
