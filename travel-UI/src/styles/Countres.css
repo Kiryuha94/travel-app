@@ -25,7 +25,6 @@
   align-items: center;
 }
 
-
 .api-information {
   width: 100%;
   height: max-content;
@@ -63,7 +62,6 @@
   color: rgb(41, 18, 14);
 }
 
-
 .media {
   display: flex;
   flex-direction: column;
@@ -78,6 +76,12 @@
   margin-left: 2rem;
 }
 
+
+.languages {
+  width: max-content;
+  padding-left: 3rem;
+}
+
 .card-text {
   width: 90%;
   padding: 3px;
@@ -90,39 +94,38 @@
 .country {
   font-size: 5rem;
   color: rgb(0, 0, 0);
-    text-shadow: 5px 5px 5px rgb(243, 242, 242), 0 0 1em rgb(26, 92, 110);
+  text-shadow: 5px 5px 5px rgb(243, 242, 242), 0 0 1em rgb(26, 92, 110);
 }
 
 .capital {
   font-size: 3rem;
   color: rgb(253, 253, 253);
-    text-shadow: 3px 3px 5px rgb(0, 0, 0), 0 0 1em rgb(26, 92, 110);
+  text-shadow: 3px 3px 5px rgb(0, 0, 0), 0 0 1em rgb(26, 92, 110);
 }
 
 @media screen and (max-width: 486px) {
- .api-map{
-   margin-top: 2rem;
-   flex-direction: column;
- }
+  .api-map {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
 
- .title-country{
-   display: none;
- }
+  .title-country {
+    display: none;
+  }
 
- .capital{
-   font-size: 1.5rem;
- }
- .languages{
-   width: max-content;
-   margin: 0 auto;
-   /* padding-left: 10rem; */
- }
- .header-country {
-  background:none; 
-}
+  .capital {
+    font-size: 1.5rem;
+  }
+  .languages {
+    width: max-content;
+    margin: 0 auto;
+    /* padding-left: 10rem; */
+  }
+  .header-country {
+    background: none;
+  }
 
-media > div{
-  width: 100% !important;
-
-}
+  media > div {
+    width: 100% !important;
+  }
 }
