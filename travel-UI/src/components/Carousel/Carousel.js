@@ -5,56 +5,56 @@ import { useTranslation } from 'react-i18next';
 
 const UniversalCarousel = (props) => {
   const [t, i18n] = useTranslation();
-  const { setCountryItem, setCountryFooter } = props;
+  const { setCountry } = props;
   const items = [
     {
       src: '/media/img/Belarus/Minsk.jpg',
-      altText: 'Belarus',
+      altText: 'bel',
       caption: t('caption.bel'),
-      information: t('mainInf.bel'),
+      information: t('capitals.bel'),
     },
     {
       src: '/media/img/Poland/poland.jpeg',
-      altText: 'Poland',
+      altText: 'pl',
       caption: t('caption.pl'),
-      information: t('mainInf.pl'),
+      information: t('capitals.pl'),
     },
 
     {
       src: '/media/img/Ukraine/Ukraine.jpg',
-      altText: 'Ukraine',
+      altText: 'ukr',
       caption: t('caption.ukr'),
-      information: t('mainInf.ukr'),
+      information: t('capitals.ukr'),
     },
     {
       src: '/media/img/Russia/Moscow.jpg',
-      altText: 'Russia',
+      altText: 'ru',
       caption: t('caption.ru'),
-      information: t('mainInf.ru'),
+      information: t('capitals.ru'),
     },
     {
       src: '/media/img/France/France.jpg',
-      altText: 'France',
+      altText: 'fr',
       caption: t('caption.fr'),
-      information: t('mainInf.fr'),
+      information: t('capitals.fr'),
     },
     {
       src: '/media/img/Nederland/Nederland.jpg',
-      altText: 'The Netherlands',
+      altText: 'nl',
       caption: t('caption.nl'),
-      information: t('mainInf.nl'),
+      information: t('capitals.nl'),
     },
     {
       src: '/media/img/Czech/prage.jpg',
-      altText: 'The Czech Republic',
+      altText: 'cz',
       caption: t('caption.cz'),
-      information: t('mainInf.cz'),
+      information: t('capitals.cz'),
     },
     {
       src: '/media/img/New Zealand/New Zealand.jpg',
-      altText: 'New Zealand',
+      altText: 'nz',
       caption: t('caption.nz'),
-      information: t('mainInf.nz'),
+      information: t('capitals.nz'),
     },
   ];
   const [activeIndex, setActiveIndex] = useState(0);
@@ -76,7 +76,13 @@ const UniversalCarousel = (props) => {
     if (animating) return;
     setActiveIndex(newIndex);
   };
-
+  
+  const chouseCountry = (e) => {
+    const currCountry = e.target.alt;
+   setCountry({
+     country: currCountry,
+   });
+  };
   const slides = items.map((item) => {
     return (
       <CarouselItem
@@ -84,23 +90,20 @@ const UniversalCarousel = (props) => {
         onExited={() => setAnimating(false)}
         key={`${item.src}${item.caption}`}>
         <div
-          className="carousel1"
-          onClick={() => {
+          id="carousel"
+          onClick={(e) => {
             props.history.push('/country');
-            setCountryItem({
-              header: 'USA',
-              // body: '/media/img/New Zealand/New Zealand.jpg',
-            });
+            chouseCountry(e);
           }}>
           <img src={item.src} alt={item.altText} />
         </div>
-        <CarouselCaption className="info-contry" captionText={''} captionHeader={item.caption} />
+        <CarouselCaption className="d-block info-country" captionText={item.information} captionHeader={item.caption} />
       </CarouselItem>
     );
   });
 
   return (
-    <Carousel  className='aaa'  activeIndex={activeIndex} next={next} previous={previous}>
+    <Carousel className="aaa" activeIndex={activeIndex} next={next} previous={previous}>
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
 
       {slides}

@@ -1,16 +1,15 @@
 import { withTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import Country from './Country';
-import { setCountryFooter } from 'actions';
+import { setCountry } from 'actions';
 import { withRouter } from 'react-router-dom';
 
 const mapDispatchToProps = {
-  setCountryFooter,
+  setCountry,
 };
 
 const mapStateToProps = ({ main }) => ({
-  item: main.item || {},
-  footer: main.footer || {},
+  country: main.country || {},
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(withTranslation()(withRouter(Country)));

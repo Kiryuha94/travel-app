@@ -19,16 +19,15 @@ const Weather = ({ city }) => {
         const curTime = new Date(utcTime + 3600000 * timeZone);
         setDate(
           `${curTime.getDate() < 10 ? `0${curTime.getDate()}` : `${curTime.getDate()}`} : ${
-            (curTime.getMonth()+1) < 10 ? `0${curTime.getMonth()+1}` : `${curTime.getMonth()+1}`
+            curTime.getMonth() + 1 < 10 ? `0${curTime.getMonth() + 1}` : `${curTime.getMonth() + 1}`
           }`
         );
-        setInterval(() => {
-          setTime(
-            `${curTime.getHours() < 10 ? `0${curTime.getHours()}` : `${curTime.getHours()}`} : ${
-              curTime.getMinutes() < 10 ? `0${curTime.getMinutes()}` : `${curTime.getMinutes()}`
-            }`
-          );
-        }, 1000);
+        setTime(
+          `${curTime.getHours() < 10 ? `0${curTime.getHours()}` : `${curTime.getHours()}`} : ${
+            curTime.getMinutes() < 10 ? `0${curTime.getMinutes()}` : `${curTime.getMinutes()}`
+          }`
+        );
+        setInterval(() => getDate(), 1000);
       };
       getDate();
     };

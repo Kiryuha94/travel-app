@@ -12,10 +12,10 @@ export default function main(state = {}, action) {
       return { ...state, ...payload };
     case actionTypes.SET_SEARCH:
       return { ...state, search: payload };
-    case actionTypes.SET_COUNTRY_ITEM:
-      return { ...state, item: payload };
-    case actionTypes.SET_COUNTRY_FOOTER:
-      return { ...state, footer: payload };
+    case actionTypes.SET_COUNTRY:
+      return { ...state, country: payload };
+    // case actionTypes.SET_COUNTRY_FOOTER:
+    //   return { ...state, footer: payload };
     default:
       return state;
   }

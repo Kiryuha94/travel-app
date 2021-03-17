@@ -1,54 +1,64 @@
 // import { render } from '@testing-library/react';
 import React, { Component } from 'react';
 import UniversalCarousel from 'components/Carousel';
-// import Modal from 'components/Modal/modal'
+import bel from '../../constants/countresJSON/bel.json';
+import ru from '../../constants/countresJSON/ru.json';
+import ukr from '../../constants/countresJSON/ukr.json';
+import pl from '../../constants/countresJSON/pl.json';
+import fr from '../../constants/countresJSON/fr.json';
+import nl from '../../constants/countresJSON/nl.json';
+import nz from '../../constants/countresJSON/nz.json';
+import cz from '../../constants/countresJSON/cz.json';
 import {
   Button,
   Input,
-  Card,
-  CardHeader,
   CardTitle,
   CardBody,
   CardFooter,
-  CardImg,
   ButtonDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
 } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import { setSearch } from 'actions';
+import { setCountry } from 'actions';
 
 class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
       isDropBut: false,
-      filter:'',
-      countres: 
-       [ 'bel', 'pol', 'ukr','ru']
-      
+      filter: '',
+      data: [bel, ru, ukr, pl, cz, nl, nz, fr],
     };
-    
   }
-  
+
   toggle = () => {
     const { isDropBut } = this.state;
     this.setState({ isDropBut: !isDropBut });
   };
-  
+
   changeLanguage = (lng) => {
-    this.props.i18n.changeLanguage(lng);}
-    
-    
-    hendlSerch =(e)=>{
-      console.log(e);
-     this.setState({ filter: e.target.value });
-      
-    }
+    this.props.i18n.changeLanguage(lng);
+  };
+
+  hendlSerch = (e) => {
+    this.setState({ filter: e.target.value });
+  };
+
+  chouseCountry = (el) => {
+    const currCountry = el;
+    this.props.setCountry({
+      country: currCountry,
+    });
+  };
 
   render() {
-    const { isDropBut } = this.state;
+    const { filter, data, isDropBut } = this.state;
+    if (filter.length > 1) {
+    }
+    const filteredData = data.filter((item) => {
+      return item.country.toLowerCase().includes(filter.toLowerCase());
+    });
     const { t, i18n } = this.props;
 
     return (
@@ -58,15 +68,30 @@ class Main extends Component {
           <CardTitle tag="h1">{t('title')}</CardTitle>
           <div className="d-flex flex-row bg-transparent border-0">
             <Input
-              className="w-25"
+              autoFocus={true}
+              className="w-25 position-relative"
               type="search"
               placeholder="Search the country"
+              value={filter}
               onChange={this.hendlSerch}
-              // onChange={(e) => {
-                //   this.props.setSearch(e.target.value);
-                // }}
-                />
-            <Button onClick={() => {}}>{t('buttonSerch')}</Button>
+            />
+            {filter.length > 1 && (
+              <ul className="filter">
+                {filteredData.map((item, index) => (
+                  <li key={`${index}${item}`}>{item.country}</li>
+                ))}
+              </ul>
+            )}
+            <Button
+              onClick={() => {
+                const curId = filteredData.map((item) => {
+                  return item.id;
+                });
+                this.chouseCountry(curId[0]);
+                this.props.history.push('/country');
+              }}>
+              {t('buttonSerch')}
+            </Button>
             <ButtonDropdown isOpen={isDropBut} toggle={this.toggle}>
               <DropdownToggle caret>{t('buttonChouseLang')}</DropdownToggle>
               <DropdownMenu>

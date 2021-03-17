@@ -12,5 +12,5 @@ export const setSearch = (payload) => ({
   type: actionTypes.SET_SEARCH,
 });
 
-export const setCountryItem = createAction(actionTypes.SET_COUNTRY_ITEM);
-export const setCountryFooter = createAction(actionTypes.SET_COUNTRY_FOOTER);
+export const setCountry = createAction(actionTypes.SET_COUNTRY);
+// export const setCountryFooter = createAction(actionTypes.SET_COUNTRY_FOOTER);

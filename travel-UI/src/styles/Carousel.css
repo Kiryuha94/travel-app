@@ -1,6 +1,6 @@
-.carousel1 {
+#carousel {
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
   height: 50rem;
   display: flex;
   justify-content: center;
@@ -11,21 +11,29 @@
   width: 100%;
 }
 
-.info-contry {
+.info-country {
   height: max-content;
   margin-bottom: 1.5rem;
 }
 
-.info-contry p {
+.info-country p {
+  width: max-content;
   background-color: rgba(0, 0, 0, 0.3);
   color: rgb(250, 242, 242);
   font-size: 1.5rem;
   font-weight: 900;
   text-shadow: 1px 1px 2px black, 0 0 1em rgb(148, 215, 231);
+  margin: 0 auto;
+  padding: 0.2rem;
 }
 
-.info-contry h3 {
+.info-country h3 {
+  font-size: 2.5rem;
   color: rgb(30, 236, 236);
-  text-shadow: 1px 1px 2px black, 0 0 1em red;
 }
 
+@media screen and (max-width: 768px) {
+  #carousel  div {
+    display: inline-block !important;
+  }
+}

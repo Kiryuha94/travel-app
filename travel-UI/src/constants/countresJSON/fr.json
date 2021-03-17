@@ -1,0 +1,17 @@
+{
+  "country": "France, Франция",
+  "id": "fr",
+  "cur": "EUR",
+  "bgPage": "http://www.goodnewspilipinas.com/wp-content/uploads/2018/01/eiffel-tower.jpg",
+  "siderIt1": "https://www.touropia.com/gfx/d/day-trips-from-paris/palace_of_fontainebleau.jpg?v=1ccd1ebb8107837789d131e251b5699d",
+  "siderIt2": "https://www.touropia.com/gfx/d/gothic-cathedrals/chartres_cathedral.jpg?v=bda90b7402cb42f3ed2d7ce51ae1d18a",
+  "siderIt3": "https://www.touropia.com/gfx/d/tourist-attractions-in-france/palais_des_papes.jpg?v=1",
+  "siderIt4": "https://www.touropia.com/gfx/d/canyons-of-the-world/gorge_du_verdon.jpg?v=0711fddb664d6baa1a460f9f2940b183",
+  "siderIt5": "https://www.touropia.com/gfx/d/beautiful-palaces-in-the-world/palace_of_versailles.jpg?v=1",
+  "siderIt6": "https://www.touropia.com/gfx/d/tourist-attractions-in-france/chamonix.jpg?v=1",
+  "video": "https://www.youtube.com/embed/BZLZyX3JdEM",
+  "coordinate": {
+    "lat": "48.86245165175493",
+    "lng": "2.33744493951801"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "country": "New Zealand, Новая Зеландия",
+  "id": "nz",
+  "cur": "NZD",
+  "bgPage": "https://w-dog.ru/wallpapers/9/0/298457272940383.jpg",
+  "siderIt1": "https://www.touropia.com/gfx/d/tourist-attractions-in-new-zealand/napier_art_deco.jpg?v=1",
+  "siderIt2": "https://www.touropia.com/gfx/d/tourist-attractions-in-new-zealand/franz_josef_glacier.jpg?v=1",
+  "siderIt3": "https://www.touropia.com/gfx/d/tourist-attractions-in-new-zealand/wai_o_tapu.jpg?v=1",
+  "siderIt4": "https://www.touropia.com/gfx/d/tourist-attractions-in-new-zealand/tongariro_alpine_crossing.jpg?v=1",
+  "siderIt5": "https://www.touropia.com/gfx/d/beautiful-bays-in-the-world/bay_of_islands.jpg?v=a175d923ca037414e7a93c8ebcf3ba0b",
+  "siderIt6": "https://www.touropia.com/gfx/d/beautiful-fjords-of-the-world/milford_sound.jpg?v=3e1a45698b0c690bfe99185a086b047f",
+  "video": "https://www.youtube.com/embed/EdKDIph5IaM",
+  "coordinate": {
+    "lat": "-41.29831781542387",
+    "lng": "174.77040500996347"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "country": "Ukraine, Украина",
+  "id": "ukr",
+  "cur": "UAH",
+  "bgPage": "https://image.shutterstock.com/image-photo/monument-motherland-kyiv-ukrainian-national-600w-1856224213.jpg",
+  "siderIt1": "https://image.shutterstock.com/z/stock-photo-scenic-summer-aerial-view-of-the-market-square-architecture-in-the-old-town-of-lviv-ukraine-1168888132.jpg",
+  "siderIt2": "https://image.shutterstock.com/z/stock-photo-traditional-ukrainian-wooden-church-with-green-roof-located-in-national-park-preserving-1852281067.jpg",
+  "siderIt3": "https://image.shutterstock.com/z/stock-photo-lviv-ukraine-february-monument-to-adam-mickiewicz-1919838509.jpg",
+  "siderIt4": "https://image.shutterstock.com/image-photo/view-street-khreshchatyk-independence-square-600w-655147243.jpg",
+  "siderIt5": "https://image.shutterstock.com/z/stock-photo-kiev-pechersk-lavra-and-the-motherland-monument-unesco-world-heritage-in-kyiv-ukraine-1828827047.jpg",
+  "siderIt6": "https://image.shutterstock.com/z/stock-photo-the-southern-bridge-across-the-dnieper-in-kiev-the-capital-of-ukraine-1178833933.jpg",
+  "video": "https://www.youtube.com/embed/MX3-dB8Rylw",
+  "coordinate": {
+    "lat": "50.45768752365884",
+    "lng": "30.514808641267884"
+  }
+}

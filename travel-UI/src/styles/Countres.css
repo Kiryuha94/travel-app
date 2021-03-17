@@ -25,6 +25,7 @@
   align-items: center;
 }
 
+
 .api-information {
   width: 100%;
   height: max-content;
@@ -61,6 +62,7 @@
   text-shadow: 1px 1px 2px rgb(245, 241, 241), 0 0 1em rgb(148, 215, 231);
   color: rgb(41, 18, 14);
 }
+
 
 .media {
   display: flex;
