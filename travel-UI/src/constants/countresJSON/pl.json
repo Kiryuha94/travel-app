@@ -1,0 +1,17 @@
+{
+  "country": "Poland, Польша",
+  "id": "pl",
+  "cur": "PLN",
+  "bgPage": "https://pix10.agoda.net/geo/country/182/3_182_poland_02.jpg?s=1920x",
+  "siderIt1": "https://www.planetware.com/wpimages/2020/03/poland-best-places-to-visit-krakow.jpg",
+  "siderIt2": "https://www.planetware.com/wpimages/2020/03/poland-top-attractions-auschwitz-birkenau-camps.jpg",
+  "siderIt3": "https://www.planetware.com/wpimages/2020/03/poland-top-attractions-warsaw-old-market-place.jpg",
+  "siderIt4": "https://www.planetware.com/wpimages/2020/03/poland-top-attractions-marlbork-castle.jpg",
+  "siderIt5": "https://www.planetware.com/wpimages/2020/03/poland-top-attractions-lazienki-park.jpg",
+  "siderIt6": "https://www.planetware.com/wpimages/2020/03/poland-top-attractions-morskie-oko-lake.jpg",
+  "video": "https://www.youtube.com/embed/f3Cnfcs8wms",
+  "coordinate": {
+    "lat": "52.247971826965184",
+    "lng": "21.01527013003402"
+  }
+}

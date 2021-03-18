@@ -1,0 +1,40 @@
+{
+  "title": "We help you travel",
+  "buttonSerch": "Serch",
+  "buttonChouseLang": "Languages",
+  "tempr":"Temperature",
+  "time":"Time",
+  "date":"Date",
+  "capitalText":"Capital of this country -",
+  "natCurrency":"National currency",
+  "caption": {
+    "nz": "New Zealand",
+    "cz": "The Czech Republic",
+    "bel": "Belarus",
+    "ru": "Russia",
+    "pl": "Poland",
+    "ukr": "Ukraine",
+    "nl": "Nederland",
+    "fr": "France"
+  },
+  "capitals":{
+     "nz": "Wellington",
+    "cz": " Prague",
+    "bel": "Minsk",
+    "ru": " Moscow",
+    "pl": " Warsaw",
+    "ukr": "Kiev",
+    "nl": " Amsterdam",
+    "fr": " Paris"
+  },
+  "mainInf": {
+    "nz": "New Zealand (Māori: Aotearoa [aɔˈtɛaɾɔa]) is an island country in the southwestern Pacific Ocean. It consists of two main landmasses—the North Island (Te Ika-a-Māui) and the South Island (Te Waipounamu)—and more than 700 smaller islands, covering a total area of 268,021 square kilometres (103,500 sq mi). New Zealand is about 2,000 kilometres (1,200 mi) east of Australia across the Tasman Sea and 1,000 kilometres (600 mi) south of the islands of New Caledonia, Fiji, and Tonga. The country's varied topography and sharp mountain peaks, including the Southern Alps, owe much to tectonic uplift and volcanic eruptions. New Zealand's capital city is Wellington, and its most populous city is Auckland.",
+    "cz": "The Czech Republic: Česká republika [ˈtʃɛskaː ˈrɛpublɪka] , also known by its short-form name, Czechia (/ˈtʃɛkiə/ (About this soundlisten); Czech: Česko [ˈtʃɛsko] (About this soundlisten)), is a landlocked country in Central Europe. It is bordered by Austria to the south, Germany to the west, Poland to the northeast, and Slovakia to the east.The Czech Republic has a hilly landscape that covers an area of 78,866 square kilometers (30,450 sq mi) with a mostly temperate continental climate and oceanic climate. It is a unitary parliamentary republic.",
+    "bel": "Belarus,officially the Republic of Belarus, is a landlocked country in Eastern Europe. It is bordered by Russia to the east and northeast, Ukraine to the south, Poland to the west, and Lithuania and Latvia to the northwest. Covering an area of 207,600 square kilometres (80,200 sq mi) and with a population of 9.4 million, Belarus is the thirteenth-largest and the twentieth-most populous country in Europe. The country is administratively divided into seven regions, and is one of the world`s most urbanized, with over 40% of its total land area forested. Minsk is the country`s capital and largest city.",
+    "ru": "Russia (Russian: Россия, Rossiya, Russian pronunciation: [rɐˈsʲijə]), or the Russian Federation, is a transcontinental country spanning Eastern Europe and Northern Asia. It is the largest country in the world; covering over 17,125,191 square kilometres (6,612,073 sq mi), consisting of more than one-eighth of the Earth`s inhabited land area, extending to eleven time zones, and has bordering sixteen sovereign nations. Russia has a population of 146.6 million; and is the ninth-most populous country, as well as the most populous country in Europe. Moscow, the capital, is the largest city in Europe, while Saint Petersburg is the second-largest city and the country`s cultural centre. Russians are the largest Slavic and European nation; speaking Russian, the most spoken Slavic language, and the most spoken native language in Europe.",
+    "pl": "Poland (Polish: Polska [ˈpɔlska]), officially the Republic of Poland (Polish: Rzeczpospolita Polska [ʐɛt͡ʂpɔˈspɔlita ˈpɔlska] (About this soundlisten)), is a country located in Central Europe. It is divided into 16 administrative provinces, covering an area of 312,696 square kilometres (120,733 sq mi), and has a largely temperate seasonal climate. With a population of nearly 38.5 million people, Poland is the fifth most populous member state of the European Union. Poland`s capital and largest metropolis is Warsaw. Other major cities include Kraków, Łódź, Wrocław, Poznań, Gdańsk, and Szczecin.",
+    "ukr": "Ukraine (Ukrainian: Україна, romanized: Ukraina, pronounced [ʊkrɐˈjinɐ]); Russian: Украина, romanized: Ukraina pronounced [ʊkrɐˈinə]) is a country in Eastern Europe. It is bordered by Russia to the east and north-east; Belarus to the north; Poland, Slovakia and Hungary to the west; and Romania, Moldova, Crimea, and the Black Sea to the south. Including Crimea, Ukraine has an area of 603,628 km2 (233,062 sq mi), and is the second-largest country in Europe after Russia. Excluding Crimea, Ukraine has a population of about 41.5 million, making it the eighth-most populous country in Europe.",
+    "nl": "The Netherlands (Dutch: Nederland [ˈneːdərlɑnt], informally Holland, is a country primarily located in Western Europe and partly in the Caribbean. It is the largest of four constituent countries of the Kingdom of the Netherlands. In Europe, the Netherlands consists of twelve provinces, bordering Germany to the east, Belgium to the south, and the North Sea to the northwest, with maritime borders in the North Sea with those countries and the United Kingdom.In the Caribbean, it consists of three special municipalities: the islands of Bonaire, Sint Eustatius and Saba. The country`s official language is Dutch, with West Frisian as a secondary official language in the province of Friesland, and English and Papiamento as secondary official languages in the Caribbean Netherlands.",
+    "fr": "France (French: [fʁɑ̃s] Listen), officially the French Republic (French: République française), is a country primarily located in Western Europe, consisting of metropolitan France and several overseas regions and territories. The metropolitan area of France extends from the Rhine to the Atlantic Ocean and from the Mediterranean Sea to the English Channel and the North Sea. The overseas territories include French Guiana in South America and several islands in the Atlantic, Pacific and Indian Oceans. France borders Belgium, Luxembourg and Germany to the northeast, Switzerland, Monaco and Italy to the east, Andorra and Spain to the south, as well as the Netherlands, Suriname and Brazil in the Americas. The country`s eighteen integral regions (five of which are situated overseas) span a combined area of 643,801 km2 (248,573 sq mi) and a total population of 67.4 million (as of February 2021)."
+  }
+}

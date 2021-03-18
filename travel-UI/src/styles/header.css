@@ -1,0 +1,48 @@
+.card-title {
+  width: max-content;
+  font-size: 4rem;
+  color: rgb(247, 235, 235);
+  font-weight: 900;
+  margin: 0 auto;
+  padding-top: 1rem;
+  opacity: 0.8;
+}
+.header {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  top: 0.5rem;
+  left: 3rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: chartreuse;
+}
+
+.filter {
+  position: absolute;
+  top: 100%;
+  left: 2%;
+  z-index: 2;
+}
+.filter li {
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-shadow: 5px 5px 5px rgb(242, 249, 250);
+  color: rgb(5, 5, 5);
+}
+
+.language{
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 486px) {
+ h1{
+   display: none;
+ }
+ .serch{
+  padding-left: 8rem;
+ }
+}

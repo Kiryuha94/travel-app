@@ -1,0 +1,17 @@
+{
+  "country": "Russia, Россия",
+  "id": "ru",
+  "cur": "RUB",
+  "bgPage": "https://cdni.rbth.com/rbthmedia/images/2019.09/original/5d77955e85600a7a53667e83.jpg",
+  "siderIt1": "https://www.touropia.com/gfx/d/tourist-attractions-in-russia/mount_elbrus.jpg?v=e2f36931aea6e27726d349d6c9b91844",
+  "siderIt2": "https://www.touropia.com/gfx/d/tourist-attractions-in-russia/kizhi_island.jpg?v=1",
+  "siderIt3": "https://www.touropia.com/gfx/d/tourist-attractions-in-russia/lake_baikal.jpg?v=1",
+  "siderIt4": "https://www.touropia.com/gfx/d/famous-official-residences/moscow_kremlin.jpg?v=1",
+  "siderIt5": "https://www.touropia.com/gfx/d/best-museums-in-the-world/hermitage_museum.jpg?v=1",
+  "siderIt6": "https://www.touropia.com/gfx/d/famous-domes/saint_basils_cathedral.jpg?v=738987d995522a0004717158cbe59a15",
+  "video": "https://www.youtube.com/embed/YrNxPr4PKQo",
+  "coordinate": {
+    "lat": "55.75275892188668",
+    "lng": "37.614795022585895"
+  }
+}
