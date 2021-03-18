@@ -1,0 +1,40 @@
+{
+  "title": "Wir helfen Ihnen zu reisen",
+  "buttonSerch": "Serch",
+  "buttonChouseLang": "Sprache",
+  "tempr": "Temperatur",
+  "natCurrency": "Landeswährung",
+  "time": "Zeit",
+  "date": "Datum",
+
+  "caption": {
+    "nz": "Neuseeland",
+    "cz": "Tschechien",
+    "bel": "Belarus",
+    "ru": "Russland",
+    "pl": "Polen",
+    "ukr": "Ukraine",
+    "nl": "Nederland",
+    "fr": "Frankreich"
+  },
+  "capitals": {
+    "nz": "Wellington",
+    "cz": "Praha",
+    "bel": "Minsk",
+    "ru": "Moskau",
+    "pl": "Warschau",
+    "ukr": "Kiew",
+    "nl": "Amsterdam",
+    "fr": "Paris"
+  },
+  "mainInf": {
+    "nz": "Neuseeland (Māori: Aotearoa [aɔtɛaɾɔa]) ist ein Inselland im südwestlichen Pazifik. Es besteht aus zwei Hauptlandmassen-der Nordinsel (Te Ika-a-Māui) und der Südinsel (Te Waipounamu)—und mehr als 700 kleineren Inseln mit einer Gesamtfläche von 268.021 Quadratkilometern. Neuseeland liegt etwa 2.000 Kilometer östlich von Australien über die Tasmanische See und 1.000 Kilometer südlich der Inseln Neukaledonien, Fidschi und Tonga. Die abwechslungsreiche Topographie des Landes und die scharfen Berggipfel, einschließlich der Südalpen, verdanken viel tektonischen Auftritten und Vulkanausbrüchen. Neuseelands Hauptstadt ist Wellington, und seine bevölkerungsreichste Stadt ist Auckland.",
+    "cz": "Die Tschechische Republik: Česká republika [tʃɛskaː rɛpublɪka], auch bekannt unter seinem Kurznamen, Tschechien (/tʃɛkiə / (Über diese Soundlisten); Tschechisch: Česko [tʃɛsko] (Über diese Soundlisten)), ist ein Binnenstaat in Mitteleuropa. Es grenzt im Süden an Österreich, im Westen an Deutschland, im Nordosten an Polen und im Osten an die Slowakei.Die Tschechische Republik hat eine hügelige Landschaft mit einer Fläche von 78.866 Quadratkilometern mit einem meist gemäßigten Kontinentalklima und ozeanischem Klima. Es ist eine einheitliche parlamentarische Republik.",
+    "bel": "Belarus,offiziell die Republik Belarus, ist ein Binnenstaat in Osteuropa. Es grenzt im Osten und Nordosten an Russland, im Süden an die Ukraine, im Westen an Polen und im Nordwesten an Litauen und Lettland. Mit einer Fläche von 207.600 Quadratkilometern und 9,4 Millionen Einwohnern ist Belarus das dreizehngrößte und zwanzigste bevölkerungsreichste Land Europas. Das Land ist administrativ in sieben Regionen unterteilt und zählt mit über 40% seiner gesamten Landfläche zu den urbanisiertesten der Welt. Minsk ist die Hauptstadt und größte Stadt des Landes.",
+    "ru": "Russland (Russisch: Россия, Rossiya, russische Aussprache: [rɐsʲijə]), oder die Russische Föderation, ist ein transkontinentales Land, das Osteuropa und Nordasien umfasst. Es ist das größte Land der Welt; mit einer Fläche von über 17,125,191 Quadratkilometern (6,612,073 Quadratmeilen), bestehend aus mehr als einem Achtel der bewohnten Landfläche der Erde, erstreckt sich auf elf Zeitzonen und grenzt an sechzehn souveräne Nationen. Russland hat eine Bevölkerung von 146,6 Millionen; und ist das neuntgrößte Land, sowie das bevölkerungsreichste Land in Europa. Moskau, die Hauptstadt, ist die größte Stadt Europas, während Sankt Petersburg die zweitgrößte Stadt und das kulturelle Zentrum des Landes ist. Russen sind die größte slawische und europäische Nation; sprechen Russisch, die am meisten gesprochene slawische Sprache, und die am meisten gesprochene Muttersprache in Europa.",
+    "pl": "Poland (Polish: Polska [ˈpɔlska]), officially the Republic of Poland (Polish: Rzeczpospolita Polen [ʐɛtʂpɔˈspɔlita ˈpɔlska] (About this soundlisten)), is a country located in Central Europe. It is divided into 16 administrative provinces, covering an area of 312,696 square kilometres (120,733 sq mi), and has a largely mäßigen seasonal climate. Mit rund 38,5 Millionen Einwohnern ist Polen das fünftbeliebteste Mitglied der Europäischen Union. Poland's capital and largest metropolis is Warsaw. Andere große Städte sind Krakau, Lodz, Breslau, Posen, Danzig, and Szczecin.",
+    "ukr": "Ukraine (Ukrainian: Україна, romanized: Ukraina, ausgesprochen [ʊkrɐˈjinɐ]); Russisch: Украина, romanized: Ukraina, ausgesprochen [ʊkrɐˈinə]) ist ein Land in Ost-Europa. Es grenzt an Russland im Osten und Nordosten; Weißrussland im Norden; Polen, Slowakei und Ungarn im Westen; und Rumänien, Moldawien, Krim, und das Schwarze Meer im Süden. Einschließlich der Krim hat die Ukraine eine Fläche von 603.628 km2 und ist nach Russland das zweitgrößte Land Europas. Ohne die Krim hat die Ukraine etwa 41,5 Millionen Einwohner und ist damit das achtgrößte Land Europas.",
+    "nl": "Die Niederlande (niederländisch: Nederland [neːdərlɑnt], informell Holland, ist ein Land, das hauptsächlich in Westeuropa und teilweise in der Karibik liegt. Es ist das größte von vier konstituierenden Ländern des Königreichs der Niederlande. In Europa, Die Niederlande bestehen aus zwölf Provinzen, grenzt an Deutschland im Osten, Belgien im Süden, und die Nordsee im Nordwesten, mit Seegrenzen in der Nordsee mit diesen Ländern und den Vereinigten Staaten. Kingdom.In die Karibik, es besteht aus drei speziellen Gemeinden: die Inseln Bonaire, Sint Eustatius und Saba. Die Amtssprache des Landes ist Niederländisch, mit Westfriesisch als sekundäre Amtssprache in der Provinz Friesland, und Englisch und Papiamento als sekundäre Amtssprachen in der Karibik Niederlande.",
+    "fr": "Frankreich (französisch: [fʁɑs] Hören), offiziell die Französische Republik (Französisch: République française), ist ein Land, das hauptsächlich in Westeuropa liegt und aus dem französischen Mutterland und mehreren überseeischen Regionen und Gebieten besteht. Die Metropolregion Frankreichs erstreckt sich vom Rhein bis zum Atlantik und vom Mittelmeer bis zum Ärmelkanal und der Nordsee. Die Überseegebiete umfassen Französisch-Guayana in Südamerika und mehrere Inseln im Atlantik, Pazifik und Indischen Ozean. Frankreich grenzt im Nordosten an Belgien, Luxemburg und Deutschland, im Osten an die Schweiz, Monaco und Italien, im Süden an Andorra und Spanien sowie in Amerika an die Niederlande, Suriname und Brasilien. Die achtzehn integralen Regionen des Landes (von denen fünf in Übersee liegen) erstrecken sich über eine Gesamtfläche von 643.801 km2 und eine Gesamtbevölkerung von 67.4 Millionen (Stand Februar 2021)."
+  }
+}

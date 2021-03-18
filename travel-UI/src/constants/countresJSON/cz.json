@@ -1,0 +1,17 @@
+{
+  "country": "The Czech Republic, Чехия",
+  "id": "cz",
+  "cur": "CZK",
+  "bgPage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSycJI19lZ_y5LN7R1TTbGzKc1A6AuD0T8Wkg&usqp=CAU",
+  "siderIt1": "https://www.touropia.com/gfx/d/best-places-to-visit-in-czech-republic/telc.jpg?v=9707b64e955ac0d5831964174bef2b65",
+  "siderIt2": "https://www.touropia.com/gfx/d/best-places-to-visit-in-czech-republic/castle_karlstejn.jpg?v=7f7fe198726d0d825d41a41a1a827aaf",
+  "siderIt3": "https://www.touropia.com/gfx/d/best-places-to-visit-in-czech-republic/karlovy_vary.jpg?v=301785bbc83babd16fadad841c8a1356",
+  "siderIt4": "https://www.touropia.com/gfx/d/best-places-to-visit-in-czech-republic/kutna_hora.jpg?v=12505553633039b73e1600d7e2028e4d",
+  "siderIt5": "https://www.touropia.com/gfx/d/best-places-to-visit-in-czech-republic/cesky_krumlov.jpg?v=5986730619c632c6ddcef88481472320",
+  "siderIt6": "https://www.touropia.com/gfx/d/most-photographed-cities-in-europe/prague.jpg?v=1",
+  "video": "https://www.youtube.com/embed/DaHgJP1MbtA",
+  "coordinate": {
+    "lat": "50.09571897900781",
+    "lng": "14.407938230962635"
+  }
+}

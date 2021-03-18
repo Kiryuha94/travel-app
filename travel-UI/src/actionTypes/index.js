@@ -1,0 +1,12 @@
+const actionTypes = {
+  REQUEST: 'REQUEST',
+  SUCCESS: 'SUCCESS',
+  FAILURE: 'FAILURE',
+
+  SET_SEARCH: 'SET_SEARCH',
+
+  SET_COUNTRY: 'SET_COUNTRY',
+  // SET_COUNTRY_FOOTER: 'SET_COUNTRY_FOOTER',
+};
+
+export default actionTypes;

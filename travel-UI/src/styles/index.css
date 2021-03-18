@@ -1,0 +1,10 @@
+@import "./header.css";
+@import "./normalize.css";
+@import "./bady.css";
+@import "./footer.css";
+@import "./Carousel.css";
+@import "./Countres.css";
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@import "node_modules/~video-react/dist/video-react.css"
